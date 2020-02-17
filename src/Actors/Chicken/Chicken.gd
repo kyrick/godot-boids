@@ -29,7 +29,7 @@ func _physics_process(delta):
 	var avoid_vector = get_avoid_vector(_flock)
 	var align_vector = align_to_flock(_flock, _velocity)
 	
-	var acceleration = align_vector + avoid_vector + center_vector
+	var acceleration = align_vector * max_force + avoid_vector * max_force + center_vector * max_force + mouse_vector * max_force
 	
 	_velocity = (_velocity + acceleration).clamped(speed)
 	
@@ -50,7 +50,7 @@ func align_to_flock(flock: Array, vector: Vector2) -> Vector2:
 
 func get_center_vector(flock: Array) -> Vector2:
 	var flock_center: = get_flock_center(flock)
-	var center_speed = global_position.distance_to(flock_center)/ 100
+	var center_speed = global_position.distance_to(flock_center) / 100
 	var center_vector = global_position.direction_to(flock_center) * center_speed
 	return center_vector
 
