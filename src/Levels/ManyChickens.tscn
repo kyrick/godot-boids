@@ -12,7 +12,6 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 
 
 [node name="Chicken" parent="." instance=ExtResource( 1 )]
 position = Vector2( 799.72, 209.159 )
-avoid_distance = 40.0
 
 [node name="Chicken2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 598.401, 379.244 )

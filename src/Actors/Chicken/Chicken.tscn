@@ -40,7 +40,7 @@ radius = 6.97882
 height = 4.10973
 
 [sub_resource type="CircleShape2D" id=3]
-radius = 197.616
+radius = 200.0
 
 [node name="Chicken" type="KinematicBody2D" groups=[
 "prey",
@@ -48,8 +48,6 @@ radius = 197.616
 position = Vector2( -2.70764, 0.902496 )
 collision_mask = 8
 script = ExtResource( 6 )
-max_force = 0.05
-avoid_distance = 20.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -7.62939e-06, -0.231535 )
