@@ -48,7 +48,7 @@ radius = 197.616
 position = Vector2( -2.70764, 0.902496 )
 collision_mask = 8
 script = ExtResource( 6 )
-max_force = 0.1
+max_force = 0.05
 avoid_distance = 20.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]

@@ -23,13 +23,13 @@ func _input(event):
 func _physics_process(delta):
 	var mouse_vector = Vector2.ZERO
 	if _mouse_target != Vector2.INF:
-		mouse_vector = global_position.direction_to(_mouse_target) * speed
+		mouse_vector = global_position.direction_to(_mouse_target) * speed * max_force
 	
-	var center_vector = get_center_velocity(_flock)
-	var avoid_vector = get_avoid_velocity(_flock)
-	var align_vector = align_to_flock_velocity(_flock)
+	var center_vector = get_center_velocity(_flock) * max_force
+	var avoid_vector = get_avoid_velocity(_flock) * max_force
+	var align_vector = align_to_flock_velocity(_flock) * max_force
 	
-	var acceleration = align_vector * max_force + avoid_vector * max_force + center_vector * max_force + mouse_vector * max_force
+	var acceleration = align_vector + avoid_vector + center_vector + mouse_vector 
 	
 	_velocity = (_velocity + acceleration).clamped(speed)
 	
@@ -49,9 +49,10 @@ func align_to_flock_velocity(flock: Array) -> Vector2:
 
 
 func get_center_velocity(flock: Array) -> Vector2:
-	var flock_center: = get_flock_center(flock)
-	var center_speed = global_position.distance_to(flock_center) / 100
-	var center_vector = global_position.direction_to(flock_center)
+	var center_pos: = get_flock_center(flock)
+	
+	var center_vector = global_position.direction_to(center_pos)
+	var center_speed = (global_position.distance_to(center_pos) / 100)
 	return center_vector * center_speed
 
 
