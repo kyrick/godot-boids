@@ -13,22 +13,10 @@ tile_data = PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 
 [node name="Chickens" type="Node" parent="."]
 
 [node name="Chicken" parent="Chickens" instance=ExtResource( 2 )]
-position = Vector2( 253.377, 243.536 )
+position = Vector2( 799.72, 209.159 )
 
 [node name="Chicken2" parent="Chickens" instance=ExtResource( 2 )]
-position = Vector2( 432.656, 238.054 )
-
-[node name="Chicken3" parent="Chickens" instance=ExtResource( 2 )]
-position = Vector2( 338.299, 93.0325 )
+position = Vector2( 598.401, 379.244 )
 
 [node name="Chicken4" parent="Chickens" instance=ExtResource( 2 )]
-position = Vector2( 589.725, 251.097 )
-
-[node name="Chicken5" parent="Chickens" instance=ExtResource( 2 )]
-position = Vector2( 717.996, 255.618 )
-
-[node name="Chicken6" parent="Chickens" instance=ExtResource( 2 )]
-position = Vector2( 877.441, 194.533 )
-
-[node name="Chicken7" parent="Chickens" instance=ExtResource( 2 )]
-position = Vector2( 596.589, 401.428 )
+position = Vector2( 518.415, 231.532 )

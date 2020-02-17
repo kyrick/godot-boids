@@ -45,10 +45,11 @@ radius = 197.616
 [node name="Chicken" type="KinematicBody2D" groups=[
 "prey",
 ]]
-collision_mask = 9
+position = Vector2( -2.70764, 0.902496 )
+collision_mask = 8
 script = ExtResource( 6 )
-speed = 50.0
-avoid_distance = 50.0
+speed = 200.0
+avoid_distance = 100.0
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -7.62939e-06, -0.231535 )
