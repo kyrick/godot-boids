@@ -23,11 +23,11 @@ func _input(event):
 func _physics_process(delta):
 	var mouse_vector = Vector2.ZERO
 	if _mouse_target != Vector2.INF:
-		mouse_vector = global_position.direction_to(_mouse_target) * speed - _velocity
+		mouse_vector = global_position.direction_to(_mouse_target) * speed
 	
 	var center_vector = get_center_vector(_flock)
 	var avoid_vector = get_avoid_vector(_flock)
-	var align_vector = align_to_flock(_flock, _velocity)
+	var align_vector = align_to_flock(_flock)
 	
 	var acceleration = align_vector * max_force + avoid_vector * max_force + center_vector * max_force + mouse_vector * max_force
 	
@@ -36,14 +36,14 @@ func _physics_process(delta):
 	_velocity = move_and_slide(_velocity)
 
 
-func align_to_flock(flock: Array, vector: Vector2) -> Vector2:
+func align_to_flock(flock: Array) -> Vector2:
 	var out: = Vector2()
 	
 	if flock.size():
 		var flock_v: = Vector2()
 		for f in flock:
 			flock_v += f._velocity
-		out = (flock_v / flock.size()) - vector
+		out = (flock_v / flock.size())
 	
 	return out
 
@@ -70,7 +70,8 @@ func get_avoid_vector(flock: Array) -> Vector2:
 	
 	for f in flock:
 		var neighbor_pos: Vector2 = f.global_position
-		if global_position.distance_to(neighbor_pos) < avoid_distance:
-			avoid_vector -= (neighbor_pos - global_position)
+		var d = global_position.distance_to(neighbor_pos)
+		if d < avoid_distance and d > 0:
+			avoid_vector -= (neighbor_pos - global_position).normalized() * pow(d, 2)
 	
 	return avoid_vector
