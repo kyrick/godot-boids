@@ -6,7 +6,6 @@ var _flock: Array = []
 var _mouse_target = Vector2.INF
 var _velocity = Vector2(rand_range(-1, 1), rand_range(-1, 1)).normalized() * speed
 
-
 func _on_FlockView_body_entered(body: PhysicsBody2D):
 	if self != body:
 		_flock.append(body)
