@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/Actors/Flag/Flag.gd" type="Script" id=1]
+[ext_resource path="res://assets/sprites/Objects/Flag.png" type="Texture" id=2]
+
+[node name="Flag" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Flag" type="Sprite" parent="."]
+position = Vector2( 0, -10.1646 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )

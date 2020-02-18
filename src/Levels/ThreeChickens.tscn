@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/sprites/Terrain_Flat/GroundTileSet.tres" type="TileSet" id=1]
 [ext_resource path="res://src/Actors/Chicken/Chicken.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/Actors/Flag/Flag.tscn" type="PackedScene" id=3]
 
 [node name="ThreeChickens" type="Node2D"]
 
@@ -18,3 +19,6 @@ position = Vector2( 726.427, 307.992 )
 
 [node name="Chicken3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 707.882, 369.81 )
+
+[node name="Flag" parent="." instance=ExtResource( 3 )]
+position = Vector2( 574.971, 511.988 )
