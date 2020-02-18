@@ -14,6 +14,19 @@ Controls:
 
 ![Flocking](Flocking.png)
 
+# Adjusting the simulation
+
+You can control the paremeters of the simulation in the editor without touching code (though feel free to mess with the code as well! ;) )
+
+The Chicken scene script variables:
+* View distance - distance to view flock for each Boid
+* Avoid distance - the distance at which a void will try to avoid another boid
+* Max Speed - the maximum speed of the boid
+* Force - There is a seperate force for each vector: cohesion, separation, alignment and mouse follow. Try playing with them :) 
+
+The RandomChickens scene script variables:
+* Boids - the number of boids that will spawn
+
 # Credits
 
 This project uses the [FarmPuzzleAnimals](https://comigo.itch.io/farm-puzzle-animals) pack created by [CoMiGo](https://comigo.itch.io/)  
