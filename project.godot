@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Simple-flocking"
-run/main_scene="res://src/Levels/ManyChickens.tscn"
+run/main_scene="res://src/Levels/RandomChickens.tscn"
 config/icon="res://icon.png"
 
 [display]
