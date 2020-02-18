@@ -6,6 +6,12 @@ This is a godot implementation of [Craig Reynolds Boids](https://en.wikipedia.or
 
 Click F5 to run the default screen. Then click anywhere on the screen to issue a waypoint for the boids. The boids will continue to chase mouse clicks.
 
+Controls: 
+* left click - place target flag
+* right click - scatter the boids to random locations on the screen.
+
+[Video demonstration](https://www.youtube.com/watch?v=aCfoX45yF0w)
+
 ![Flocking](Flocking.png)
 
 # Credits
