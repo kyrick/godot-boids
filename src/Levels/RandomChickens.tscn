@@ -6,7 +6,7 @@
 
 [node name="RandomChickens" type="Node2D"]
 script = ExtResource( 2 )
-boids = 100
+boids = 150
 Boid = ExtResource( 3 )
 
 [node name="TileMap" type="TileMap" parent="."]
