@@ -7,11 +7,11 @@
 [ext_resource path="res://assets/sprites/Characters/Chick_Left.png" type="Texture" id=5]
 [ext_resource path="res://src/Actors/Chicken/Chicken.gd" type="Script" id=6]
 
-[sub_resource type="SpriteFrames" id=4]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
+"frames": [ ExtResource( 4 ) ],
 "loop": true,
-"name": "walk_down",
+"name": "dead",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ) ],
@@ -19,19 +19,19 @@ animations = [ {
 "name": "walk_left",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "walk_up",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "walk_right",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 1 ) ],
 "loop": true,
-"name": "dead",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 2 ) ],
-"loop": true,
-"name": "walk_up",
+"name": "walk_down",
 "speed": 5.0
 } ]
 
@@ -52,7 +52,7 @@ script = ExtResource( 6 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -7.62939e-06, -0.231535 )
 scale = Vector2( 0.251141, 0.251711 )
-frames = SubResource( 4 )
+frames = SubResource( 1 )
 animation = "walk_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
