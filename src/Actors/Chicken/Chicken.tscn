@@ -40,7 +40,7 @@ radius = 6.97882
 height = 4.10973
 
 [sub_resource type="CircleShape2D" id=3]
-radius = 200.0
+radius = 50.0
 
 [node name="Chicken" type="KinematicBody2D" groups=[
 "prey",
