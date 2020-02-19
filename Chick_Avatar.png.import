@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fox_Avatar.png-31025d09513e6365d157100e9b01d7f0.stex"
+path="res://.import/Chick_Avatar.png-e490e010aba17772aece367c2458c9d0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/Characters/Fox_Avatar.png"
-dest_files=[ "res://.import/Fox_Avatar.png-31025d09513e6365d157100e9b01d7f0.stex" ]
+source_file="res://Chick_Avatar.png"
+dest_files=[ "res://.import/Chick_Avatar.png-e490e010aba17772aece367c2458c9d0.stex" ]
 
 [params]
 

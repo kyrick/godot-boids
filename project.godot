@@ -15,9 +15,9 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Simple-flocking"
+config/name="Godot Boids"
 run/main_scene="res://src/Levels/RandomChickens.tscn"
-config/icon="res://icon.png"
+config/icon="res://Chick_Avatar.png"
 
 [display]
 
