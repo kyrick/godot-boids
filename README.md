@@ -1,4 +1,4 @@
-# Simple Flocking
+# Boids In Godot
 
 This is a godot implementation of [Craig Reynolds Boids](https://en.wikipedia.org/wiki/Boids). A more detailed breakdown of [Boids with pseudocode can be found here](http://www.kfish.org/boids/pseudocode.html).
 
